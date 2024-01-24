@@ -22,4 +22,4 @@ if filereadable(expand("~/.vim/vimrc_plug"))
 	source ~/.vim/vimrc_plug
 endif
 
-colorscheme elflord          " Set colorscheme
+colorscheme koehler            " Set colorscheme
