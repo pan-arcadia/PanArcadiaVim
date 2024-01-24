@@ -17,4 +17,9 @@ set ruler                      " Shows the current line number at the bottom-rig
                                " of the screen.
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
-colorscheme koehler
+
+if filereadable(expand("~/.vim/vimrc_plug"))
+	source ~/.vim/vimrc_plug
+endif
+
+colorscheme elflord          " Set colorscheme
