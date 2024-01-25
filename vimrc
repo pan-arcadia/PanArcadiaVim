@@ -1,3 +1,10 @@
+let mapleader  = " "
+
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+:nnoremap <leader>u viwU
+:inoremap jk <esc>
+
 " Enabling filetype support provides filetype-specific indenting,
 " syntax highlighting, omni-completion and other useful settings.
 filetype plugin indent on
