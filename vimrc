@@ -11,6 +11,14 @@ filetype plugin indent on
 syntax on
 set termguicolors            " Enable true colors.
 
+:set laststatus=2
+" :set statusline=%f\ %y
+:set statusline=%f				    " Path to file.
+:set statusline+=\ %y				    " Filetype.
+:set statusline+=\ [%l
+:set statusline+=/
+:set statusline+=%L]
+
 " `matchit.vim` is built-in so let's enable it!
 " Hit `%` on `if` to jump to `else`.
 runtime macros/matchit.vim
