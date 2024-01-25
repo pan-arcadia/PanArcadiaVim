@@ -17,6 +17,7 @@ set termguicolors            " Enable true colors.
 :set statusline+=\ [%l
 :set statusline+=/
 :set statusline+=%L]
+:set statusline+=\ %{FugitiveStatusline()} 
 
 " `matchit.vim` is built-in so let's enable it!
 " Hit `%` on `if` to jump to `else`.
