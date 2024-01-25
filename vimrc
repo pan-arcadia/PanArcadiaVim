@@ -1,9 +1,9 @@
-let mapleader  = " "
+let mapleader  = " "				    " Set our mapleader to <space>.
 
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-:nnoremap <leader>sv :source $MYVIMRC<cr>
-:nnoremap <leader>u viwU
-:inoremap jk <esc>
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>	    " Edit vimrc - Open vimrc in vertical split window.
+:nnoremap <leader>sv :source $MYVIMRC<cr>	    " Source vimrc - Source our vimrc file.
+:nnoremap <leader>u viwU			    " Uppercase - Transform the word under the cursor to uppercase.
+:inoremap jk <esc>				    " Exit INSERT Mode - Use `jk` (quickly) to exit Insert mode.
 
 " Enabling filetype support provides filetype-specific indenting,
 " syntax highlighting, omni-completion and other useful settings.
@@ -11,8 +11,7 @@ filetype plugin indent on
 syntax on
 set termguicolors            " Enable true colors.
 
-:set laststatus=2
-" :set statusline=%f\ %y
+:set laststatus=2				    " Always show status line.
 :set statusline=%f				    " Path to file.
 :set statusline+=\ %y				    " Filetype.
 :set statusline+=\ [%l
@@ -40,5 +39,5 @@ if filereadable(expand("~/.vim/vimrc.plug"))
     source ~/.vim/vimrc.plug
 endif
 
-colorscheme night-owl   " Set colorscheme
+colorscheme night-owl				    " Set colorscheme
 
