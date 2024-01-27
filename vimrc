@@ -1,9 +1,16 @@
 let mapleader  = " "				    " Set our mapleader to <space>.
 
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>	    " Edit vimrc - Open vimrc in vertical split window.
-:nnoremap <leader>sv :source $MYVIMRC<cr>	    " Source vimrc - Source our vimrc file.
-:nnoremap <leader>u viwU			    " Uppercase - Transform the word under the cursor to uppercase.
-:inoremap jk <esc>				    " Exit INSERT Mode - Use `jk` (quickly) to exit Insert mode.
+" Exit INSERT Mode 
+:inoremap jk <esc>				    
+
+" Edit vimrc - Open vimrc in vertical split window.
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>	    
+
+" Source vimrc - Source our vimrc file.
+:nnoremap <leader>sv :source $MYVIMRC<cr>	    
+
+" Edit ideas.md.
+:nnoremap <leader>ei :vsplit ~/Documents/pannotes/ideas.md<cr>
 
 " Enabling filetype support provides filetype-specific indenting,
 " syntax highlighting, omni-completion and other useful settings.
