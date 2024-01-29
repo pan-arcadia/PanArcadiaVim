@@ -44,8 +44,8 @@ set wildmenu                   			    " Great command-line completion, use `<Tab
 
 set softtabstop=4 shiftwidth=4 noexpandtab	    " Set tab to 4.
 
-" --- Load Plugins ---
-"  
+" -- Load Plugins --
+
 if filereadable(expand("~/.vim/vimrc.plug"))
     source ~/.vim/vimrc.plug
 endif
