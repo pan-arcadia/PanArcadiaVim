@@ -4,6 +4,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mattn/emmet-vim'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'wuelnerdotexe/vim-astro'
-	Plug 'iamcco/markdown-preview.vim' 
 	Plug 'https://github.com/wolandark/vim-live-server.git'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 call plug#end()
